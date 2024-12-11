@@ -1,7 +1,4 @@
-using System;
 using System.Data.SQLite;
-using System.IO;
-using PizzaOrderingSystem.Models;
 
 namespace PizzaOrderingSystem.Helpers;
 
@@ -56,7 +53,6 @@ public static class DatabaseHelper
                         );
                     ";
 
-
                 command.ExecuteNonQuery();
                 Console.WriteLine("\n \n 📊 Tables created or verified successfully.");
             }
@@ -66,29 +62,6 @@ public static class DatabaseHelper
             Console.WriteLine($"Error Initializing Database: {ex.Message}");
         }
     }
-
-    // public static int InsertCustomer(Customer customer)
-    // {
-    //     try
-    //     {
-    //         using (var connection = new SQLiteConnection(ConnectionString))
-    //         {
-    //             connection.Open();
-    //             var command = connection.CreateCommand();
-    //             command.CommandText = "INSERT INTO Customers (Name, Address) VALUES (@Name, @Address); SELECT last_insert_rowid();";
-    //             command.Parameters.AddWithValue("@Name", customer.Name);
-    //             command.Parameters.AddWithValue("@Address", customer.Address);
-
-    //             // Convert the result to an integer
-    //             return Convert.ToInt32(command.ExecuteScalar());
-    //         }
-    //     }
-    //     catch (Exception ex)
-    //     {
-    //         Console.WriteLine($"Error inserting customer: {ex.Message}");
-    //         return -1; // Return -1 to indicate failure
-    //     }
-    // }
 
     public static int InsertOrder(int customerId, string status)
     {

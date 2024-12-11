@@ -82,3 +82,4 @@
 /Users/trayanov/RCL🐓/C_Sharp/PizzaOrdering_Ass/PizzaOrderingSystem/obj/Debug/net8.0/PizzaOrderingSystem.pdb
 /Users/trayanov/RCL🐓/C_Sharp/PizzaOrdering_Ass/PizzaOrderingSystem/obj/Debug/net8.0/PizzaOrderingSystem.genruntimeconfig.cache
 /Users/trayanov/RCL🐓/C_Sharp/PizzaOrdering_Ass/PizzaOrderingSystem/obj/Debug/net8.0/ref/PizzaOrderingSystem.dll
+/Users/trayanov/RCL🐓/C_Sharp/PizzaOrdering_Ass/PizzaOrderingSystem/obj/Debug/net8.0/PizzaOrderingSystem.sourcelink.json

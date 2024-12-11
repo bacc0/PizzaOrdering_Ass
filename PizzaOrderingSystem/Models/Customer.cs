@@ -1,4 +1,3 @@
-
 using System.Data.SQLite;
 using PizzaOrderingSystem.Helpers;
 
@@ -9,13 +8,8 @@ public class Customer
     public string Name { get; set; }
     public string Address { get; set; }
 
-    // public Customer(string name, string address)
-    // {
-    //     Name = name;
-    //     Address = address;
-    // }
 
-    // Gather customer information
+    // Methods Gather customer information
     public void Input()
     {
         Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n*** Please add your name ***\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
@@ -25,7 +19,7 @@ public class Customer
         Address = Console.ReadLine();
     }
 
-    // Save customer information to the database
+    // Methods Save customer information to the database
     public int Save()
     {
         try
@@ -48,10 +42,11 @@ public class Customer
             return -1; // Return -1 to indicate failure
         }
     }
-    // Print customer information (Welcome message)
+    // Methods Print customer information (Welcome message)
     public void PrintWelcome()
     {
-        Console.WriteLine($"\n\n*** Thank you, {Name} from {Address}! ***\n\n");
+        Console.WriteLine(ArtAssets.PersonalWelcome);
+        Console.WriteLine($"\n  \n   Welcome, {Name.ToUpper()} from ( {Address} )!    \n   \n  \n");
 
     }
 }

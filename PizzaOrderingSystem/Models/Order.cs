@@ -14,12 +14,12 @@ public class Order
     {
         Pizzas.Add(pizza);
     }
-
+    // Method Marks the order as completed.
     public void CompleteOrder()
     {
         Status = "Completed";
     }
-
+    // Method Cancels the order with a specified reason.
     public void CancelOrder(string reason)
     {
         Status = $"Cancelled: {reason}";
