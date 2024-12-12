@@ -10,7 +10,7 @@ public interface IOrder
     void CompleteOrder();
     void CancelOrder(string reason);
 }
-public class Order
+public class Order : IOrder
 {
     public int CustomerId { get; }
     public List<Pizza> Pizzas { get; private set; } = new List<Pizza>();

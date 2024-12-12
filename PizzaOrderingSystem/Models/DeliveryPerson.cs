@@ -5,7 +5,7 @@ public interface IDeliveryPerson
     string Name { get; }
 }
 
-public class DeliveryPerson
+public class DeliveryPerson : IDeliveryPerson
 {
     // These are the names of the drivers.
     private static readonly string[] Names = { "George", "Simon", "Jack", "Olivia" };

@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace PizzaOrderingSystem.Helpers;
 
 public static class MenuHelper
@@ -45,7 +42,7 @@ public static class MenuHelper
         while (true)
         {
             Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n*** Pizza Size ***\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("1. Xtra Large");
+            Console.WriteLine("1. Extra Large");
             Console.WriteLine("2. Large");
             Console.WriteLine("3. Regular");
             Console.Write("\nEnter your choice (1-3): ");
@@ -54,7 +51,7 @@ public static class MenuHelper
             {
                 return choice switch
                 {
-                    1 => "Xtra Large",
+                    1 => "Extra Large",
                     2 => "Large",
                     3 => "Regular",
                     _ => throw new InvalidOperationException()
@@ -86,7 +83,10 @@ public static class MenuHelper
         Console.WriteLine("8. Fresh garlic");
         Console.WriteLine("\nEnter the topping numbers separated by space (e.g., 1 2 3): ");
 
-        string[] toppingChoices = Console.ReadLine()?.Split();
+        // string[] toppingChoices = Console.ReadLine()?.Split() ;
+        string[] toppingChoices = (Console.ReadLine() ?? "").Split();
+
+
 
         if (toppingChoices != null)
         {
@@ -94,6 +94,7 @@ public static class MenuHelper
             {
                 if (int.TryParse(choice, out int toppingNumber) && toppingNumber >= 1 && toppingNumber <= 8)
                 {
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                     string topping = toppingNumber switch
                     {
                         1 => "Pepperoni",
@@ -106,6 +107,7 @@ public static class MenuHelper
                         8 => "Fresh garlic",
                         _ => null
                     };
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
                     toppings.Add(topping);
                 }

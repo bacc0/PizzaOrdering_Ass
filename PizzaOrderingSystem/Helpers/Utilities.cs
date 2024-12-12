@@ -13,7 +13,10 @@ public static class Utilities
         while (true)
         {
             Console.WriteLine(message);
-            string input = Console.ReadLine()?.ToLower();
+            // string input = Console.ReadLine()?.ToLower();
+
+            // Convert input to lowercase, default to an empty string if null
+            string input = Console.ReadLine()?.ToLower() ?? string.Empty;
             if (input == "y") return true;
             if (input == "n") return false;
 

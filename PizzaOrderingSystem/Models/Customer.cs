@@ -5,14 +5,20 @@ namespace PizzaOrderingSystem.Models;
 
 public interface ICustomer
 {
+    string? Name { get; set; }
+    string? Address { get; set; }
+
     void Input(); // Gather customer information
     int Save();   // Save customer information to the database
     void PrintWelcome(); // Print a welcome message with customer details
 }
-public class Customer
+
+public class Customer : ICustomer
 {
-    public string Name { get; set; }
-    public string Address { get; set; }
+
+    public string? Name { get; set; }
+    public string? Address { get; set; }
+
 
 
     // Methods Gather customer information
@@ -52,8 +58,7 @@ public class Customer
     public void PrintWelcome()
     {
         Console.WriteLine(ArtAssets.PersonalWelcome);
-        Console.WriteLine($"\n  \n   Welcome, {Name.ToUpper()} from ( {Address} )!    \n   \n  \n");
-
+        Console.WriteLine($"\n  \n   Welcome, {Name?.ToUpper() ?? "Guest"} from ( {Address} )!    \n   \n  \n");
     }
 }
 
