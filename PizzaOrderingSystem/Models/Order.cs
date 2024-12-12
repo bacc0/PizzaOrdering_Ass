@@ -1,4 +1,15 @@
 namespace PizzaOrderingSystem.Models;
+
+public interface IOrder
+{
+    int CustomerId { get; }
+    List<Pizza> Pizzas { get; }
+    string Status { get; }
+
+    void AddPizza(Pizza pizza);
+    void CompleteOrder();
+    void CancelOrder(string reason);
+}
 public class Order
 {
     public int CustomerId { get; }

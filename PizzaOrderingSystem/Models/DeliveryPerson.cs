@@ -1,4 +1,10 @@
 namespace PizzaOrderingSystem.Models;
+
+public interface IDeliveryPerson
+{
+    string Name { get; }
+}
+
 public class DeliveryPerson
 {
     // These are the names of the drivers.

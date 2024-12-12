@@ -1,5 +1,14 @@
 namespace PizzaOrderingSystem.Models;
 
+public interface IPizza
+{
+    string Type { get; set; }
+    string Size { get; set; }
+    List<string> Toppings { get; }
+
+    void AddToppings(List<string> toppings);
+}
+
 public class Pizza
 {
     public string Type { get; set; }

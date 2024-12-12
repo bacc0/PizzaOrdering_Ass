@@ -3,6 +3,12 @@ using PizzaOrderingSystem.Helpers;
 
 namespace PizzaOrderingSystem.Models;
 
+public interface ICustomer
+{
+    void Input(); // Gather customer information
+    int Save();   // Save customer information to the database
+    void PrintWelcome(); // Print a welcome message with customer details
+}
 public class Customer
 {
     public string Name { get; set; }

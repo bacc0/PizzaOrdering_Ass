@@ -1,7 +1,11 @@
 using System;
 
 namespace PizzaOrderingSystem.Helpers;
-
+public interface IUtilities
+{
+    bool AskYesNo(string message);
+    void WaitForKey();
+}
 public static class Utilities
 {
     public static bool AskYesNo(string message)
