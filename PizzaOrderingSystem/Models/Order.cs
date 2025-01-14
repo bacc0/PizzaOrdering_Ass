@@ -25,6 +25,11 @@ public class Order : IOrder
     {
         Pizzas.Add(pizza);
     }
+    private void UpdateOrderStatus(string newStatus)
+    {
+        Status = newStatus;
+        Console.WriteLine($"Order status updated to: {newStatus}");
+    }
     // Method Marks the order as completed.
     public void CompleteOrder()
     {
