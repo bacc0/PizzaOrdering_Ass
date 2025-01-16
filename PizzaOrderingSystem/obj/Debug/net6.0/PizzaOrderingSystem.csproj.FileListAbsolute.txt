@@ -1,5 +1,0 @@
-/Users/trayanov/RCL🐓/C_Sharp/part_II/PizzaOrderingSystem/obj/Debug/net6.0/PizzaOrderingSystem.csproj.AssemblyReference.cache
-/Users/trayanov/RCL🐓/C_Sharp/part_II/PizzaOrderingSystem/obj/Debug/net6.0/PizzaOrderingSystem.GeneratedMSBuildEditorConfig.editorconfig
-/Users/trayanov/RCL🐓/C_Sharp/part_II/PizzaOrderingSystem/obj/Debug/net6.0/PizzaOrderingSystem.AssemblyInfoInputs.cache
-/Users/trayanov/RCL🐓/C_Sharp/part_II/PizzaOrderingSystem/obj/Debug/net6.0/PizzaOrderingSystem.AssemblyInfo.cs
-/Users/trayanov/RCL🐓/C_Sharp/part_II/PizzaOrderingSystem/obj/Debug/net6.0/PizzaOrderingSystem.csproj.CoreCompileInputs.cache

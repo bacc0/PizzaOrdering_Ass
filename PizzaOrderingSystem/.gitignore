@@ -6,3 +6,6 @@ bin/Debug/net8.0/PizzaOrderingSystem.db
 
 # Optional: Ignore all files in the Debug folder
 bin/Debug/
+
+obj/
+
