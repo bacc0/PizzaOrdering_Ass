@@ -1,11 +1,7 @@
-# Ignore the database file in the root directory
+# Ignore database files
 PizzaOrderingSystem.db
-
-# Ignore the database file in the bin/Debug/net8.0/ directory
 bin/Debug/net8.0/PizzaOrderingSystem.db
 
-# Optional: Ignore all files in the Debug folder
-bin/Debug/
-
+# Ignore entire bin and obj directories
+bin/
 obj/
-
